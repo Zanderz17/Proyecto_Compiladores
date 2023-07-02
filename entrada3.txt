@@ -1,0 +1,15 @@
+int numero, reverso, resto;
+main() {
+  reverso = 0;
+  puts('Ingrese un numero: ');
+  numero = 125;
+
+  while (numero != 0) {
+    resto = numero % 10;
+    reverso = reverso * 10 + resto;
+    numero = numero / 10;
+  }
+  puts('El número reverso es: ');
+  putw(reverso);
+  puts("\n");
+}

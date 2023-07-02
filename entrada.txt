@@ -1,0 +1,16 @@
+int edad;
+main() {
+  puts("Ingrese su edad: ");
+  edad = 45;
+
+  if (edad >= 18) {
+    puts("Eres mayor de edad.");
+    if (edad >= 65) {
+      puts("Además, eres un adulto mayor.");
+    } else {
+      puts("Aún no eres un adulto mayor.");
+    }
+  } else {
+    puts("Eres menor de edad.");
+  }
+}
