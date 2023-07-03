@@ -199,6 +199,16 @@ Gramática para el lenguaje _Simple-C_:
 - E => V
 - E => NUMERO
 
+### Mejoras en Desarrollo
+
+#### If y while anidados
+
+Como veremos en los **resultados** el código en _simple-c_ del archivo _entrada.txt_ nuestro compilador acepta **if** anidados, de la misma forma que **while's** anidados. En ese sentido la salida de nuestro código ha sido validada mediante un análisis manual a las entradas utilizadas.
+
+#### Declaración de variables
+
+Como veremos en los **resultados** el código en _simple-c_ del archivo **entrada_con_errores.txt** muestra que el compilador reconoce cuando una variable no ha sido declarada, pero ha sido usada en la ejecución del programa. Esto se logró mediante una implementación de un **hash** que almacena las variables que van siendo declaradas antes de la función **main** tal como es especificado en la descripción del proyecto.
+
 ## Resultados
 
 Básicamente se probaron 3 programas escritos en los archivos: entrada.txt, entrada2.txt y entrada3.txt. Y se obtuvo el siguiente código intermedio.
