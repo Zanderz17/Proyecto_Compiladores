@@ -90,15 +90,15 @@ Todos estos fueron definidos usando expresiones regulares y se encuentran en el 
 
 Fue el archivo más complicado de implemetar. Para ayudarnos en nuestro análisis sintáctico y semántico dentro de este archivo definimos las siguientes structuras:
 
-- TempLabel: Estructura que genera objetos que pueden ser usados como temporalos o como labels en el código de tres direcciones
+- TempLabel: Estructura que genera objetos que pueden ser usados como temporales o labels en el código de tres direcciones
 
-- Nodo: Nodo usado para la creación de una pila dinámica que almacena structuras del tipo **TempLabel**
+- Nodo: Nodo usado para la creación de una pila dinámica que almacena estructuras del tipo **TempLabel**
 
-- Pila: Pila que almacena objetos del tipo **TempLabel** insertados dentro de una structura Nodo
+- Pila: Pila que almacena objetos del tipo **TempLabel** insertados dentro de una estructura Nodo
 
-- Node: Nodo para la estructura Hash. La cuál almacena variables que serán usadas en el código en tres direcciones.
+- Node: Nodo para la estructura Hash. La cual almacena variables que serán usadas en el código en tres direcciones.
 
-- HashTable: Estrucura que almancena variables que serán usadas en el código en tres direcciones. Como las variables son cadena de carácteres, se utiliza el algoritmo **djb2** para generar su valor único dentro del hash.
+- HashTable: Estructura que almacena variables que serán usadas en el código en tres direcciones. Como las variables son cadena de carácteres, se utiliza el algoritmo **djb2** para generar su valor único dentro del hash.
 
 - Pila(Array): Actua como pila principal del programa para generar el código en tres direcciones.
 
