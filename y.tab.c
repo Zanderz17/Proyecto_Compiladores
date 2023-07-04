@@ -229,6 +229,7 @@ bool hash_table_contains(const HashTable *hash_table, const char *key) {
 
 /* --- FIN: Estructuras */
 
+/* --- INICIO: FUNCIONES E Declaraciones de estructuras --- */
 struct TempLabel temporal= {'t', 0};
 char pila[100][10];
 int top=0;
@@ -332,18 +333,17 @@ void Lcond()
 }
 
 void search_hash() {
-    if (hash_table_contains(&hash_table, yytext) == true) {
-
-    } else {
-        yyerror("Parsing aborted: Variable not defined");
-        exit(1);
-    }
+    if (hash_table_contains(&hash_table, yytext) == false) {
+      yyerror("Parsing aborted: Variable not defined");
+      exit(1);
+    } 
 }
 
 void insert_hash()
 {
   hash_table_insert(&hash_table, yytext);
 }
+/* --- FIN: FUNCIONES E INICIALIZACIONES --- */
 
 #line 349 "y.tab.c"
 
