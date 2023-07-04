@@ -49,7 +49,7 @@ El fundamento teórico principal de este proyecto se basó en las clases del cur
 
 ### Análisis Léxico
 
-Tal como señala el libro **Compilers Principles Techniques And Tools**: "El análisis léxico propiamente dicho es la parte más compleja, donde el escáner produce la secuencia de tokens como salida" (Alfred Aho et al, 2011, p.133). En el análisis léxico se identifican los lexemas del código y se generan asociaciones lexema/tokens. Posteriormente las asociaciones token/lexema son enviados al parser para el análisis sintáctico. Así mismo, en el análisis léxico se filtran ciertas secciones del input sin importancia para el compilador, como lo son comentarios y cualquier tipo de espacios en blanco. El análsis léxico funciona como primer filtro en el cual se evalúan los elementos del input y su existencia en el lenguaje manejado. En nuestro proyecto el análisis léxico es realizado mediante flex, en donde se definen mediante gramáticas regulares los token que desamos obtener dentro de una entrada dada. 
+Tal como señala el libro **Compilers Principles Techniques And Tools**: "El análisis léxico propiamente dicho es la parte más compleja, donde el escáner produce la secuencia de tokens como salida" (Alfred Aho et al, 2011, p.133). En el análisis léxico se identifican los lexemas del código y se generan asociaciones lexema/tokens. Posteriormente las asociaciones token/lexema son enviados al parser para el análisis sintáctico. Así mismo, en el análisis léxico se filtran ciertas secciones del input sin importancia para el compilador, como lo son comentarios y cualquier tipo de espacios en blanco. El análsis léxico funciona como primer filtro en el cual se evalúan los elementos del input y su existencia en el lenguaje manejado. En nuestro proyecto el análisis léxico es realizado mediante flex, en donde se definen mediante gramáticas regulares los token que desamos obtener dentro de una entrada dada.
 
 ### Análisis Sintáctico
 
@@ -269,4 +269,3 @@ Este proyecto ha proporcionado una comprensión profunda de los conceptos fundam
 
 - Alfred Aho et al. (2011) Compilers Principles Techniques And Tools. 2nd. ISBN:10-970-26-1133-4. Pearson.
 - Vo, T. (2021, December 10). Hash Tables in C++ with the djb2 Algorithm - The Startup - Medium. Medium. https://medium.com/swlh/hash-tables-in-c-with-the-djb2-algorithm-21f14ba7ca88
-- Vo, T. (2021b, December 10). Hash Tables in C++ with the djb2 Algorithm - The Startup - Medium. Medium. https://medium.com/swlh/hash-tables-in-c-with-the-djb2-algorithm-21f14ba7ca88s
