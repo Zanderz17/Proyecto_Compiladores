@@ -284,5 +284,3 @@ Este proyecto ha proporcionado una comprensión profunda de los conceptos fundam
 
 - Alfred Aho et al. (2011) Compilers Principles Techniques And Tools. 2nd. ISBN:10-970-26-1133-4. Pearson.
 - Vo, T. (2021, December 10). Hash Tables in C++ with the djb2 Algorithm - The Startup - Medium. Medium. https://medium.com/swlh/hash-tables-in-c-with-the-djb2-algorithm-21f14ba7ca88
-
-:D
