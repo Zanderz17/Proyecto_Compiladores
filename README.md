@@ -76,7 +76,7 @@ El código en tres direcciones es generado por medio de funciones que se van eje
 
 ### djb2 hash
 
-Este algoritmo fue utilizado para crear un código hash para cadenas de carácteres, que en nuestro caso consistirían en las variables declaradas en simple-c, que luego se procederan a buscar si se utilizan posteriormente. El código del hash y del algoritmo fue adaptado a partir de la siguiente página: https://medium.com/swlh/hash-tables-in-c-with-the-djb2-algorithm-21f14ba7ca88
+Este algoritmo fue utilizado para crear un código hash para cadenas de carácteres, que en nuestro caso consistirían en las variables declaradas en simple-c, que luego se procederán a buscar si se utilizan posteriormente. El código del hash y del algoritmo fue adaptado a partir de la siguiente página: https://medium.com/swlh/hash-tables-in-c-with-the-djb2-algorithm-21f14ba7ca88
 
 ## Métodos y Desarrollo
 
