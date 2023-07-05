@@ -55,9 +55,24 @@ Tal como señala el libro **Compilers Principles Techniques And Tools**: "El an�
 
 Se sabe que "El analizador utiliza los primeros componentes de los tokens producidos por el analizador léxico para crear una representación intermedia en forma de árbol que representa la estructura gramatical del flujo de tokens." (Alfred Aho et al, 2011, p.31). En nuestro proyecto esta parte fue trabajada con yacc y para ello se estableció una gramática en donde se verifica que no exista ambiguedad que yacc no pueda manejar.
 
+Asimismo, uno de los procesos utilizados para eliminar la ambiguedad de nuestra gramática se basó en la aplicación de las declaraciones **right** y **left**, ya que de esta manera establecemos la asociatividad de los operadores y eliminamos los conflictos que pudieran existir en nuestra gramática. Estas declaraciones se presentan a continuación:
+
+```
+%right ASIGNACION
+%left MENOR MAYOR MENOR_IGUAL MAYOR_IGUAL IGUALDAD DESIGUALDAD
+%left SUMA RESTA
+%left MULTIPLICACION DIVISION DIVISION_ENTER
+```
+
 ### Análisis semántico y Generación de Código intermedio
 
-En esta parte incluimos la generación de código intermedio. El cuál "consiste en una secuencia de instrucciones tipo ensamblador con tres operandos por instrucción." (Alfred Aho et al, 2011, p.32).
+En esta parte incluimos la generación de código intermedio. En nuestro proyecto implementamos código en **tres direcciones**, el cuál "consiste en una secuencia de instrucciones tipo ensamblador con tres operandos por instrucción." (Alfred Aho et al, 2011, p.32). En ese sentido, nuestras expresiones en este código son de la siguiente forma:
+
+$$
+  t1= x - 1
+$$
+
+El código en tres direcciones es generado por medio de funciones que se van ejecutando a medida que se realiza el análisis sintáctico.
 
 ### djb2 hash
 
